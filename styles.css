@@ -13,11 +13,112 @@ li {
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.1;
     background-image:url(logo.png);
+    -moz-background-inline-policy: each-box;
     background-position: calc(50%);
     background-repeat: no-repeat;
     background-size: calc(30%);
+}
+.logo {
+    text-align: center;
+    margin-bottom: 10px; /* Add margin to separate the logo and text */
+}
+
+.logo img {
+    height: 150px; /* Adjust the height as needed */
+    width: 200px;
+    
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 10px; /* Add margin to separate the logo and text */
+}
+
+nav ul {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.chat-container {
+    display: table-footer-group;
+    position: right;
+    bottom: 5%;
+    right: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    width: 300px;
+}
+
+.chat-header {
+    background-color: rgb(2, 167, 109);
+    color: #fff;
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.chat-header h3 {
+    margin: 0;
+}
+
+.close-chat {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.chat-body {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.chat-input button {
+    padding: 5px 10px;
 }
 
 .container {
@@ -26,7 +127,7 @@ body {
 }
 
 header {
-    background: #333333;
+    background: rgb(2, 167, 109);
     color: #fff;
 }
 
@@ -40,7 +141,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #f1f3f5;
+    color: #fafbfc;
     text-decoration: none;
 }
 
@@ -56,7 +157,7 @@ header nav ul li a {
 
 .service {
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #113cd9;
     padding: 30px;
 }
 
@@ -73,14 +174,14 @@ header nav ul li a {
 .contact .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #333;
+    background: rgb(2, 167, 109);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 
 footer {
-    background: #333;
+    background: rgb(2, 167, 109);
     color: #fff;
     text-align: center;
     padding: 20px 0;

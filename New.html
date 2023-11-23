@@ -12,19 +12,36 @@
     <header>
         <nav>
             <div class="container">
+                <!-- Add a centered logo -->
                 <h1>Helping Hands</h1>
                 <ul>
                     <li><a href="#services">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="logo">
+                    <img src="logo1.png" alt="Helping Hands Logo">
+                </div>
             </div>
+        </nav>
+    </header>
+<body>
+    <header>
+        <nav>
+            <!--<div class="container">
+                <h1>Helping Hands</h1>
+                <ul>
+                    <li><a href="#services">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>-->
         </nav>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h2>Welcome to Helping Hands Animal Medical Support</h2>
+            <h2>Welcome to <font color="orange">Helping Hands</font> Animal Medical Support</h2>
             <p>We care for your beloved pets. Offering top-notch medical support for animals in need.</p>
         </div>
     </section>
@@ -63,11 +80,33 @@
         </div>
     </section>
 
+    <!-- Chatbot Button -->
+    <div class="chatbot-container">
+        <button id="open-chatbot" class="btn chatbot-btn">Open Chatbot</button>
+    </div>
+
+    <!-- Chat Container (Hidden by default) -->
+    <div id="chat-container" class="chat-container">
+        <div id="chat-header" class="chat-header">
+            <span id="close-chat" class="close-chat">&times;</span>
+            <h3>Chat with us</h3>
+        </div>
+        <div id="chat-body" class="chat-body">
+            <!-- Chat messages go here -->
+        </div>
+        <div id="chat-input" class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-btn" class="btn send-btn">Send</button>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <p>&copy; 2023 Helping Hands</p>
         </div>
     </footer>
+
+    <script src="script.js"></script> <!-- Add a script file for handling chatbot interactions -->
 </body>
 
 </html>
